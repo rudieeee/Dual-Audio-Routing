@@ -142,16 +142,6 @@ A native Android app that owns the call (built with WebRTC) would solve this com
 
 ---
 
-## Roadmap
-
-- [x] Core audio routing — call left, music right
-- [x] Independent volume control per ear
-- [ ] Menu bar app with GUI sliders
-- [ ] Auto-duck music when call starts
-- [ ] Keyboard shortcuts for volume control
-- [ ] Native Android app (WebRTC + AudioTrack stereo routing)
-
----
 
 ## Tech Stack
 
