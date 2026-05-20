@@ -13,8 +13,8 @@ def callback(indata, outdata, frames, time, status):
         print(status, file=sys.stderr)
 
     # indata channels come from the Aggregate Device in order:
-    # channels 0-1 = BlackHole 2ch  → call audio (Google Meet / WhatsApp)
-    # channels 2-3 = BlackHole 16ch → music audio (Apple Music / YouTube)
+    # channels  16-17 = BlackHole 2ch  → call audio (Google Meet / WhatsApp)
+    # channels 0-15 = BlackHole 16ch → music audio (Apple Music / YouTube)
 
     call_audio  = indata[:, 16] * call_vol
     music_audio = indata[:, 0] * music_vol
